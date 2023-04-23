@@ -1,0 +1,238 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0%;
+}
+.landing {
+  position: relative;
+}
+.container {
+  text-align: center;
+  align-items: center;
+  background-image: url("./img/bg.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+.blinker {
+  font-size: 4rem;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+}
+.landing-tagline {
+  font-family: "Anuphan", sans-serif;
+  font-size: 4rem;
+  display: inline-block;
+}
+.text-area {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.text {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0%;
+}
+.animate-blinker {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 550px) {
+  .landing-tagline {
+    font-size: 2rem;
+  }
+}
+.btns {
+  position: absolute;
+  bottom: 170px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  color: white;
+  cursor: pointer;
+  animation: movedown 2s infinite;
+}
+a {
+  color: white;
+}
+.works {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(121, 121, 121, 0.82),
+      rgba(75, 75, 75, 0.93)
+    ),
+    url("./img/portfolio-bg.png");
+  text-align: center;
+}
+.works h1 {
+  margin: 0;
+  padding: 40px 0 0 0;
+  color: white;
+  font-size: 3rem;
+}
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.project {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 40%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+.project img {
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.project-info {
+  margin: 20px;
+  text-align: left;
+}
+.project-info h2 {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.project-info p {
+  color: white;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+.project-info a {
+  border: 2px solid white;
+  padding: 5px 40px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.project-info a:hover {
+  background-color: white;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.about {
+  margin: auto;
+  padding: 50px 0px 0px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.52),
+      rgba(75, 75, 75, 0.73)
+    ),
+    url("./img/about-bg.jpg");
+  background-size: cover;
+  color: white;
+}
+.about-info {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-align: justify;
+  margin: 20px;
+}
+.icon {
+  margin: 10px;
+}
+.social-media a {
+  text-decoration: none;
+}
+@keyframes movedown {
+  0% {
+    bottom: 170px;
+  }
+  50% {
+    bottom: 140px;
+  }
+  100% {
+    bottom: 170px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .project img {
+    width: 120px;
+  }
+  .project {
+    padding: 5px;
+    height: 450px;
+    justify-content: center;
+    align-items: safe;
+  }
+  .project-info {
+    margin: 0;
+    padding: 0;
+  }
+  .project-info p {
+    margin: 5px;
+    padding: 0;
+  }
+  .project-info a {
+    padding: 5px 10px;
+    font-weight: 100;
+    margin: 0;
+  }
+  .about-info {
+    width: auto;
+  }
+  .about img {
+    width: 350px;
+  }
+}
+.skills {
+  margin: auto;
+  padding: 20px;
+  background-color: gray;
+  text-align: center;
+}
+.skills h1 {
+  color: white;
+}
+.skills li {
+  display: inline;
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  cursor: pointer;
+}
